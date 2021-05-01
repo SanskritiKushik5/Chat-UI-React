@@ -1,0 +1,12 @@
+.sidebar {
+  height: 100vh;
+  background-color: white;
+}
+.profile {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
