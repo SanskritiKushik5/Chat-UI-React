@@ -4,10 +4,10 @@
   height: 100vh;
 }
 .heading {
-  font-weight: bolder;
-  font-size: x-large;
-  color: #666565;
-  padding-bottom: 2rem;
+  font-weight: bolder !important;
+  font-size: x-large !important;
+  color: #666565 !important;
+  padding-bottom: 2rem !important;
 }
 .nav {
   display: flex;
