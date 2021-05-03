@@ -1,3 +1,5 @@
 .app {
   background-color: #f2fcfc;
+  display: flex;
+  flex-direction: row;
 }

@@ -1,0 +1,12 @@
+.card {
+  border-radius: 20px;
+}
+.MuiCardHeader-subheader {
+  color: #47c8bf;
+}
+.MuiCardHeader-action {
+  color: #b9b6b6;
+}
+.MuiCardHeader-title {
+  font-weight: bold;
+}
