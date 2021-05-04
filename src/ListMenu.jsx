@@ -8,14 +8,16 @@ import SearchIcon from '@material-ui/icons/Search';
 import PeopleIcon from '@material-ui/icons/People';
 import MapOutlinedIcon from '@material-ui/icons/MapOutlined';
 import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import "./ListMenu.css";
+import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
-  },
+  }
 }));
 
 export default function SelectedListItem() {
@@ -27,20 +29,18 @@ export default function SelectedListItem() {
     setSelectedIndex(index);
     setActive(!isActive);
   };
-
   return (
     <div className={classes.root}>
       <List component="nav" aria-label="main mailbox folders">
         <ListItem
           button
           selected={selectedIndex === 0}
-          className={isActive ? 'listItem': null} 
           onClick={(event) => handleListItemClick(event, 0)}
         >
           <ListItemIcon>
             <SearchIcon />
           </ListItemIcon>
-          <ListItemText primary="Top Picks" />
+          <ListItemText primary="Top Picks"/>
         </ListItem>
         <ListItem
           button
@@ -71,8 +71,19 @@ export default function SelectedListItem() {
             <NotificationsNoneOutlinedIcon />
           </ListItemIcon>
           <ListItemText primary="Notifications" />
+        </ListItem>
+        <ListItem
+          button
+          selected={selectedIndex === 4}
+          onClick={(event) => handleListItemClick(event, 4)}
+          className="logout"
+        >
+          <ListItemIcon>
+            <PowerSettingsNewIcon />
+          </ListItemIcon>
+          <ListItemText primary="Logout" />
         </ListItem>      
-      </List>
+      </List> 
       </div>
   );
 }

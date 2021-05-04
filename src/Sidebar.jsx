@@ -10,7 +10,7 @@ const Sidebar = () => {
                 <Avatar/>
                 <Typography variant="h6">Candidate Name</Typography>
                 <Typography variant="subtitle2">
-                    <span style={{color: "#47c8bf"}}>Edit Profile</span> | <span style={{color: "#47c8bf"}}>Settings</span></Typography>
+                    <span style={{color: "#47c8bf", textDecoration: "underline", fontWeight: "bolder"}}>Edit Profile</span> | <span style={{color: "#47c8bf", textDecoration: "underline", fontWeight: "bolder"}}>Settings</span></Typography>
             </Grid>
             <Grid item>
                 <ListMenu />

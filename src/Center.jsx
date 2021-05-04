@@ -2,7 +2,6 @@ import { Grid, Typography } from '@material-ui/core'
 import React from 'react'
 import "./Center.css";
 import ChatCard from "./ChatCard";
-import SearchIcon from '@material-ui/icons/Search';
 
 const Center = () => {
     return (
@@ -22,7 +21,6 @@ const Center = () => {
                 <Typography 
                     className="navitem" 
                     style={{fontWeight: "bold"}}>
-                        <SearchIcon color="inherit"/>
                         Search
                 </Typography>
             </Grid>
