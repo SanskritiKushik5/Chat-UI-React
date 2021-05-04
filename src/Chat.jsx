@@ -1,7 +1,9 @@
 import React from 'react'
 import { Avatar, IconButton, Typography } from '@material-ui/core'
 import { AttachFile } from '@material-ui/icons'
+import SendOutlinedIcon from '@material-ui/icons/SendOutlined';
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+import InsertEmoticonOutlinedIcon from '@material-ui/icons/InsertEmoticonOutlined';
 import "./Chat.css";
 
 const Chat = () => {
@@ -28,19 +30,18 @@ const Chat = () => {
             </Typography>
         </div>
         
-        {/* <div className="chat__footer">
-            <InsertEmoticonIcon />
+        <div className="chat__footer">
             <form>
                 <input
-                    placeholder="Type a message"
+                    placeholder="Type message here"
                     type="text"
                 />
                 <button type="submit">
-                    Send a Message
+                    <SendOutlinedIcon style={{color: "#47c8bf"}}/>
                 </button>
             </form>
-            <MicIcon />
-        </div> */}
+            <IconButton><InsertEmoticonOutlinedIcon style={{color: "#47c8bf"}}/></IconButton>
+        </div> 
     </div>
     )
 }

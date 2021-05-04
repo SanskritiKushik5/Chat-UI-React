@@ -43,7 +43,8 @@
   justify-content: space-between;
   align-items: center;
   height: 62px;
-  border-top: 1px solid lightgray;
+  border-top: 2px solid #47c8bf;
+  background-color: white;
 }
 .chat__footer > form {
   flex: 1;
@@ -51,15 +52,22 @@
 }
 .chat__footer > form > input {
   flex: 1;
-  border-radius: 30px;
   outline-width: 0;
-  padding: 10px;
+  padding: 20px 10px;
+  font-size: 1rem;
   border: none;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+::placeholder {
+  color: rgb(167, 166, 166);
 }
 .chat__footer > form > button {
-  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 .chat__footer > .MuiSvgIcon-root {
   padding: 10px;
-  color: gray;
+  color: #47c8bf;
 }

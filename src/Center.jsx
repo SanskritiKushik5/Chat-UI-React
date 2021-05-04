@@ -15,7 +15,7 @@ const Center = () => {
                 </Typography>
                 <Typography 
                     className="navitem" 
-                    style={{marginRight: "2rem", fontWeight: "bold"}}>
+                    style={{marginRight: "2rem", fontWeight: "bold", color: "white", backgroundColor: "#47c8bf"}}>
                         Chats
                 </Typography>
                 <Typography 
